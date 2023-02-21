@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #212121;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 15px;
+    height: 40%;
+    padding: 70px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "tl_logo services remittances e_commerce connect";
+}
+
+.tl_logo {
+    grid-area: tl_logo;
+}
+
+.connect {
+    grid-area: connect;
+}
+
+.e_commerce {
+    grid-area: e_commerce;
+}
+
+.remittances {
+    grid-area: remittances;
+}
+
+.services {
+    grid-area: services;
+}

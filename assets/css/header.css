@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 2fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo shipping tracking solutions support . search";
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    margin: 0px 50px 0px 100px;
+}
+
+.shipping {
+    grid-area: shipping;
+    margin-left: 20px;
+}
+
+.tracking {
+    grid-area: tracking;
+}
+
+.solutions {
+    grid-area: solutions;
+}
+
+.support {
+    grid-area: support;
+}
+
+.search {
+    grid-area: search;
+}
